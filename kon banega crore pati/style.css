@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: 0.3ms ease-in-out;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: hsl(280deg 29.2% 22.16%);
+}
+
+.app{
+    background: #fff;
+    width: min(700px, 95%);
+    margin: 100px auto ;    
+    padding: 15px 10px ;
+    border-radius: 15px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.app h1{
+    font-size: 20px;
+    border-bottom: 1px solid;
+    color: hsl(280deg 29.2% 22.16%);;
+}
+
+.quiz{
+    margin-top: 20px;
+}
+
+#q-intro{
+    
+    font-size: 16px;
+}
+
+#q-number{
+    font-size: 13px;
+}
+
+.question-box{
+
+    margin-top: 20px;
+    background: #1c154b;
+    color: #edeef6;
+    padding: 10px 5px;
+    border: 5px solid #eec646;
+    
+    
+    
+}
+
+.options{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 10px; */
+
+}
+
+.option{
+    margin-top: 15px;
+    background-color: #1c154b;
+    padding: 10px 8px;
+    border-radius: 10px;
+    
+    border: 2px solid #eec646;
+    width: 50%;
+    cursor: pointer;
+    /* background: transparent; */
+    outline: none;
+    /* border: none; */
+    color: white;
+    text-align: left;
+    
+
+}
+
+
+
+
+
+.buttons{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+}
+
+.btn{
+    padding: 7px 16px;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(141, 45, 141);
+    border: none;
+    outline: none;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.btn:hover{
+    background: rgb(146, 15, 146);
+}
+
+#next{
+    display: none;
+}
+
+/* #lock-in{
+    display: none;
+} */
+
+
+.selected{
+    background-color: #cba31f;
+}
+
+.correct{
+    background-color: green;
+}
+
+.wrong{
+    background-color: red;
+}
+
+.score {
+    
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.start{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.start btn{
+
+    margin: 50px auto;
+}

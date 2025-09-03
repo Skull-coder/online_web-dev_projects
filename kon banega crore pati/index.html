@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="title">
+            <img src="memes/KBC13Logo.webp" alt="" width="70px">
+            <h1>KAUN BANEGA CROREPATI</h1>
+        </div>
+
+        <div class="quiz" style="display: none;">
+
+            <h2 id="q-intro">Yeh raha apke screen pr sawal</h2>
+
+            <h3 id="q-number">question 1 out of 5</h3>
+
+            <div class="question-box">
+                <h2 id="question"></h2>
+            </div>
+
+
+            <div class="options">
+                <!-- <button class="ans option"><h3>Chor Delhi भागा </h3></button>
+                <button class="ans option"><h3>Akad bakad Bambe Bo</h3></button>
+                <button class="ans option"><h3>80 aur 90 pure 170</h3></button>
+                <button class="ans option"><h3>धागा पिले color ka था</h3></button> -->
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="lock-in">Lock किया जाये</button>
+                <button class="btn" id="next">Next</button>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="score" style="display: none;">
+            <h3 id="final-score"></h3>
+            
+            <video id="result-video" autoplay loop width="250px"
+                controlslist="nodownload noremoteplayback noplaybackrate nofullscreen" disablepictureinpicture>
+                <source id="video" type="video/mp4">
+            </video>
+
+            <button onclick="location.reload()" class="btn">Play Again</button>
+        </div>
+
+        <div class="start">
+
+            <h3>KAUN BANEGA CROREPATI MAI APKA SWAGAT HAI</h3>
+            <button class="btn" id="Gamebtn">Start the GAME</button>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
