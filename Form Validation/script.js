@@ -13,7 +13,7 @@ const Numbercheck = document.getElementById("number_check");
 const Emailcheck = document.getElementById("email_check");
 
 function Submit() {
-    if (!nameInput.value.match(/^[A-Za-z]+\s{1}[A-Za-z]+$/)) {
+    if (!nameInput.value.match(/^[A-Za-z]+\s+[A-Za-z]+(\s+[A-Za-z]+)?$/)) {
         name_error.innerText = "Invalid name";
         return false;
     }
@@ -32,26 +32,26 @@ function Submit() {
 }
 
 nameInput.addEventListener("input", () => {
-    if (nameInput.value.match(/^[A-Za-z]+\s{1}[A-Za-z]+$/)) {
+    if (nameInput.value.match(/^[A-Za-z]+\s+[A-Za-z]+(\s+[A-Za-z]+)?$/)) {
         name_error.innerText = "";
         Namecheck.style.display = "inline-block";
     }
 
     else {
-        
+
         Namecheck.style.display = "none";
     }
 });
 
 
 numberInput.addEventListener("input", () => {
-  if (numberInput.value.match(/^[0-9]{10}$/)){
-    number_error.innerText = "";
-    Numbercheck.style.display = "inline-block";
-  } else {
-    
-    Numbercheck.style.display = "none";
-  }
+    if (numberInput.value.match(/^[0-9]{10}$/)) {
+        number_error.innerText = "";
+        Numbercheck.style.display = "inline-block";
+    } else {
+
+        Numbercheck.style.display = "none";
+    }
 });
 
 emailInput.addEventListener("input", () => {
@@ -59,7 +59,7 @@ emailInput.addEventListener("input", () => {
         email_error.innerText = "";
         Emailcheck.style.display = "inline-block";
     } else {
-        
+
         Emailcheck.style.display = "none";
     }
 });
@@ -70,6 +70,9 @@ button.addEventListener("click", (event) => {
 
     if (Submit()) {
         button.style.background = "rgb(24, 210, 48)";
+        nameInput.disabled = true;
+        numberInput.disabled = true;
+        emailInput.disabled = true;
         button.innerText = "Submitted :)";
     }
 
