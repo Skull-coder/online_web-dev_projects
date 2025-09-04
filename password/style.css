@@ -42,4 +42,18 @@ body{
 
 #button{
     height: 30px;
+
+}
+
+/* For Microsoft Edge and Internet Explorer */
+#textbox::-ms-reveal {
+    display: none;
+}
+
+/* For Chrome, Safari, and other WebKit browsers */
+#textbox::-webkit-credentials-auto-fill-button,
+#textbox::-webkit-clear-button,
+#textbox::-webkit-password-toggle-button {
+    display: none;
+    -webkit-appearance: none;
 }
