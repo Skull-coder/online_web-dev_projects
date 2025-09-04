@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(211, 211, 211, 0.151);
+    position: relative;
+}
+
+#Submitbtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.popup {
+    text-align: center;
+    width: 300px;
+    padding: 20px 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    transition: transform 0.4s,top 0.4s;
+    visibility: hidden;
+    
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    
+    
+}
+
+.close-popup{
+    visibility: hidden;
+}
+
+#okBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: rgb(0, 200, 0);
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#okBtn:hover {
+    background: rgb(0, 232, 0);
+}
+
+.fa-circle-check {
+    font-size: 50px;
+    color: #026829;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
