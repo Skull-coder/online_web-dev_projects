@@ -19,7 +19,12 @@ select.addEventListener("click", ()=>{
     menu.classList.toggle("drop-menu");
 })
 
-menu.addEventListener("click", (e)=>{
-    text.innerText= e.target.innerText;
-    menu.classList.toggle("drop-menu");
-})
+menu.addEventListener("click", (e) => {
+    
+    const mediaItem = e.target.closest(".media");
+
+    if (mediaItem) {
+        text.innerText = mediaItem.innerText.trim();
+        menu.classList.remove("drop-menu"); 
+    }
+});
