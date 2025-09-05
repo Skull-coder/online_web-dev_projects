@@ -6,7 +6,8 @@ let selected = null;
 
 boxes.forEach(box => {
     box.addEventListener("dragstart", (e) => {
-        selected = e.target;
+        
+        selected = e.target.closest(".box");
 
     });
 
