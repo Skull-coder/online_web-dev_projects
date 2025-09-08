@@ -36,21 +36,25 @@ form{
 
 
 
-.passwords{
-    
+.passwords {
     max-width: 0;
-    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
     height: 500px;
     border-radius: 15px;
-    
     position: absolute;
-    
     right: 0;
     left: 100%;
     top: 0;
     background: #ffffff;
     z-index: 1;
     transition: left 0.3s ease-out;
+}
+
+/* For Webkit browsers like Chrome, Safari, Edge */
+.passwords::-webkit-scrollbar {
+    display: none;
 }
 
 .view_passwords{
@@ -211,5 +215,6 @@ tr{
 #btn:hover{
     transform: scale(1.1);
 }
+
 
 
